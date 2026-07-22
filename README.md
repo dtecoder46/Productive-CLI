@@ -27,3 +27,4 @@ A Java CLI tool to help you get work done.
 # References
 1. My Java course notes
 2. w3Schools Java: https://www.w3schools.com/java/default.asp
+3. Java sleep: https://www.geeksforgeeks.org/java/thread-sleep-method-in-java-with-examples/
