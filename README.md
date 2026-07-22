@@ -4,6 +4,8 @@ A Java CLI tool to help you get work done.
 # Algorithm
 1. Read any saved tasks from a CSV
 2. Take task input, store in a list
+    1. Loop until the user inputs "stop"
+        1. Ask the user for a task
 3. Ask the user after how many tasks should a longer 15 minute break occur, store in longBreakInterval
 4. While the user doesn’t want to stop
     1. Loop through the task dictionary
