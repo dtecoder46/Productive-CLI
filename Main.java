@@ -13,31 +13,47 @@ public class Main {
 		System.out.println(text);
 	}
 
-	public static void main(String[] args) {
-		Scanner input = new Scanner(System.in);
+	/*
+	 * Name: promptLoop()
+	 * Purpose: to continuously ask for task input
+	 * Parameters: none
+	 * Return: taskList
+	 */
+
+	public static String[] promptLoop() {
 
 		// initialize variables
+		
+		Scanner input = new Scanner(System.in);
 
-		String taskInput = "";
-		int taskIndex = 0;
-		String[] taskList = new String[10]; // task total limited to 10 to prevent overworking
-
+                String taskInput = "";
+                int taskIndex = 0;
+                String[] taskList = new String[10]; // task total limited to 10 to prevent overworking
+		
 		// repetitive prompting for tasks
 
-		while (taskInput != "stop" && taskIndex <= 9) {
+                while (taskInput != "stop" && taskIndex <= 9) {
 
-			print("Enter a task you want to work on (say 'stop' to stop the loop): ");
+                        print("Enter a task you want to work on (say 'stop' to stop the loop): ");
 
-			String task = input.nextLine();
+                        String task = input.nextLine();
 
-			if (task != "stop") {
-				taskList[taskIndex] = task;
-			}
+                        if (task != "stop") {
+                                taskList[taskIndex] = task;
+                        }
 
-			taskIndex++;
+                        taskIndex++;
 
-		}
+                }
 
-		print(taskList[0]);		
+		return taskList;
+	}
+
+	public static void main(String[] args) {
+
+		String[] tasks = promptLoop();
+
+		print(tasks[0]);
+
 	}
 }

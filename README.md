@@ -17,8 +17,10 @@ A Java CLI tool to help you get work done.
 
 # Issue log
 ```diff
-- I limited the number of tasks to 10 by capping taskIndex at 9, but I am still able to input up to 11 tasks before the program crashes
-+ The OR operator allowed for the loop to continue since you did not enter "stop", regardless of whether or not the 9-index limit was met. Use the AND operator
+- Issue, 7/22/26: I limited the number of tasks to 10 by capping taskIndex at 9, but I am still able to input up to 11 tasks before the program crashes
++ The OR operator allowed for the loop to continue since you did not enter "stop", regardless of whether or not the 9-index limit was met. Use the AND operato
+
+- Issue, 7/22/26: When I input "stop" the loop keeps going when it's not supposed to
 ```
 
 # References
