@@ -8,7 +8,7 @@ A Java CLI tool to help you get work done.
         1. Ask the user for a task
 3. Ask the user after how many tasks should a longer 15 minute break occur, store in longBreakInterval
 4. While the user doesn’t want to stop
-    1. Loop through the task dictionary
+    1. Loop through the task list
         1. 25 minute timer
         2. If the task counter is divisible by longBreakInterval, start a 15 minute break
             1. Otherwise start a 5 minute break
