@@ -15,5 +15,12 @@ A Java CLI tool to help you get work done.
     2. Ask the user if they want to continue
 5. Store tasks in an CSV file
 
+# Issue log
+```diff
+- I limited the number of tasks to 10 by capping taskIndex at 9, but I am still able to input up to 11 tasks before the program crashes
++ The OR operator allowed for the loop to continue since you did not enter "stop", regardless of whether or not the 9-index limit was met. Use the AND operator
+```
+
 # References
 1. My Java course notes
+2. w3Schools Java: https://www.w3schools.com/java/default.asp
