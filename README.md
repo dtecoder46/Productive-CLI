@@ -21,6 +21,7 @@ A Java CLI tool to help you get work done.
 + The OR operator allowed for the loop to continue since you did not enter "stop", regardless of whether or not the 9-index limit was met. Use the AND operato
 
 - Issue, 7/22/26: When I input "stop" the loop keeps going when it's not supposed to
++ Use .compareTo() instead of == for string comparison
 ```
 
 # References

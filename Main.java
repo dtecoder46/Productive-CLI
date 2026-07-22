@@ -32,15 +32,17 @@ public class Main {
 		
 		// repetitive prompting for tasks
 
-                while (taskInput != "stop" && taskIndex <= 9) {
+                while (taskIndex <= 9) {
 
                         print("Enter a task you want to work on (say 'stop' to stop the loop): ");
 
                         String task = input.nextLine();
 
-                        if (task != "stop") {
-                                taskList[taskIndex] = task;
+                        if (task.compareTo("stop") == 0) {
+				break;
                         }
+
+			taskList[taskIndex] = task;
 
                         taskIndex++;
 
